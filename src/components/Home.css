@@ -1,0 +1,71 @@
+
+:root {
+  --primary-color: #3b82f6; 
+  --accent-color: #6366f1;  
+}
+
+
+.navbar {
+  background-color: var(--accent-color);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 24px;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  letter-spacing: 1px;
+}
+
+/*  Form Styling */
+.home-container {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #8e44ad, #3498db);
+}
+
+.form-box {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.form-box input {
+  width: 250px;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.form-box input:focus {
+  border-color: var(--accent-color);
+}
+
+.form-box button {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.form-box button:hover {
+  background-color: var(--accent-color);
+}
